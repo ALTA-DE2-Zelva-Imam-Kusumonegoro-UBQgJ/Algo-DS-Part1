@@ -21,6 +21,16 @@ def primeX(n,start):
         num += 1
     return num - 1 
 
+def primeX(n,start):
+    i = start
+    c = 0
+    while(c < n):
+        if(is_prime(i)):
+            n -= 1
+        i += 1
+    i -= 1 
+    return i
+
 def generate_primes_grid(width, height, start):
     grid = ""
     start_prime = primeX(1, start)

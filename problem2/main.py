@@ -13,14 +13,14 @@ def is_prime(n):
         return False
 
 def primeX(n):
-    count = 0
-    num = 0
-    while count < n:
-        if is_prime(num):
-            count += 1
-        num += 1
-    return num - 1 
+    i = 2
+    while(n > 0):
 
+        if(is_prime(i)):
+            n -= 1
+        i += 1
+    i -= 1 
+    return i
     
 
 if __name__ == "__main__":
