@@ -1,5 +1,9 @@
 def fibonacci(number):
-    return 0
+    if number <= 1:
+        return number
+    return fibonacci(number-1) + fibonacci(number-2)
+
+print()
 
 if __name__ == "__main__":
     print(fibonacci(0))  # 0
